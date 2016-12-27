@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GUILayout version="4">
+    <Window type="DefaultWindow" name="root">
+    
+    	 <Window type="GlossySerpentFHD/FrameWindow" name="NameWindow">
+            <Property name="Position" value="{{0.3, 0},{0.42,0}}" />
+            <Property name="Size" value="{{0.4,0},{0.15,0}}" />
+			<Property name="Text" value="Player Name" />	
+			<Property name="CloseButtonEnabled" value="false" />
+			
+			<Window type="GlossySerpentFHD/StaticText" name="NamePrompt">
+           		<Property name="Position" value="{{0.05, 0},{0.2,0}}" />
+            	<Property name="Size" value="{{0.4,0},{0.4,0}}" />
+				<Property name="Text" value="Please Enter your name: " />
+				<Property name="FrameEnabled" value="false" />
+				<Property name="BackgroundEnabled" value="false" />	
+			</Window> 
+			<Window type="GlossySerpentFHD/Button32_4C" name="NameButton">
+           		<Property name="Position" value="{{0.75, 0},{0.2,0}}" />
+            	<Property name="Size" value="{{0.2,0},{0.4,0}}" />
+				<Property name="Text" value="OK" />
+			</Window>
+			<Window type="GlossySerpentFHD/Editbox" name="NameBox">
+           		<Property name="Position" value="{{0.45, 0},{0.2,0}}" />
+            	<Property name="Size" value="{{0.3,0},{0.4,0}}" />
+				<Property name="Text" value="Player 1" />
+				<Property name="SelectionStart" value="0" />
+				<Property name="SelectionLength" value="8" />
+			</Window> 
+			
+		</Window> 
+		
+			 <Window type="GlossySerpentFHD/FrameWindow" name="LevelUpWindow">
+            <Property name="Position" value="{{0.3, 0},{0.42,0}}" />
+            <Property name="Size" value="{{0.4,0},{0.15,0}}" />
+			<Property name="Text" value="Level Up" />	
+			<Property name="CloseButtonEnabled" value="false" />
+			<Property name="Visible" value="false" />
+			
+			
+			<Window type="GlossySerpentFHD/StaticText" name="LevelUpPrompt">
+           		<Property name="Position" value="{{0.05, 0},{0.05,0}}" />
+            	<Property name="Size" value="{{0.95,0},{0.95,0}}" />
+				<Property name="Text" value="" />
+				<Property name="FrameEnabled" value="false" />
+				<Property name="HorzFormatting" value="WordWrapLeftAligned" />
+				<Property name="BackgroundEnabled" value="false" />
+			</Window> 
+			
+		</Window> 
+
+    	 <Window type="GlossySerpentFHD/FrameWindow" name="GameOverWindow">
+            <Property name="Position" value="{{0.3, 0},{0.38,0}}" />
+            <Property name="Size" value="{{0.4,0},{0.15,0}}" />
+			<Property name="Text" value="" />	
+			<Property name="CloseButtonEnabled" value="false" />
+			<Property name="Visible" value="false" />
+			
+			<Window type="GlossySerpentFHD/StaticText" name="GameOverPrompt">
+           		<Property name="Position" value="{{0.05, 0},{0.1,0}}" />
+            	<Property name="Size" value="{{1,0},{0.4,0}}" />
+				<Property name="Text" value="" />
+				<Property name="FrameEnabled" value="false" />
+				<Property name="BackgroundEnabled" value="false" />
+			</Window> 
+			<Window type="GlossySerpentFHD/Button32_4C" name="RestartButton">
+           		<Property name="Position" value="{{0.15, 0},{0.6,0}}" />
+            	<Property name="Size" value="{{0.32,0},{0.4,0}}" />
+				<Property name="Text" value="Start a New Game" />
+			</Window>
+			<Window type="GlossySerpentFHD/Button32_4C" name="QuitButton">
+           		<Property name="Position" value="{{0.55, 0},{0.6,0}}" />
+            	<Property name="Size" value="{{0.2,0},{0.4,0}}" />
+				<Property name="Text" value="Quit" />
+			</Window>			
+
+			
+		</Window> 
+		
+		<Window type="GlossySerpentFHD/FrameWindow" name="ScoreWindow">
+            <Property name="Position" value="{{0.2, 0},{0.2,0}}" />
+            <Property name="Size" value="{{0.6,0},{0.6,0}}" />
+			<Property name="Text" value="                                         [font='HighScoreFont-18.font']High Scores" />	
+			<Property name="Visible" value="false" />
+					
+					<Window type="GlossySerpentFHD/MultiColumnList" name="ScoresList">
+			            <Property name="Position" value="{{0.00, 0},{0.0,0}}" />
+			            <Property name="Size" value="{{1,0},{0.9,0}}" />
+						<Property name="Text" value="" />
+					</Window> 
+					<Window type="GlossySerpentFHD/Button32_4C" name="ScoreClose">
+			            <Property name="Position" value="{{0.51, 0},{0.9,0}}" />
+			            <Property name="Size" value="{{0.15,0},{0.1,0}}" />
+						<Property name="Text" value="[font='HighScoreFont-12.font']Close" />
+					</Window> 
+					<Window type="GlossySerpentFHD/Button32_4C" name="ScoreReset">
+			            <Property name="Position" value="{{0.34, 0},{0.9,0}}" />
+			            <Property name="Size" value="{{0.15,0},{0.1,0}}" />
+						<Property name="Text" value="[font='HighScoreFont-12.font']Reset" />
+					</Window> 
+
+			
+		</Window> 
+    	 
+		<Window type="GlossySerpentFHD/Button" name="NameLabel">
+            <Property name="Position" value="{{0.0, 0},{0.0,0}}" />
+            <Property name="Size" value="{{0.08,0},{0.05,0}}" />
+			<Property name="Text" value="Player" />
+		</Window> 
+    	<Window type="GlossySerpentFHD/Button" name="NameValue">
+            <Property name="Position" value="{{0.08, 0},{0.0,0}}" />
+            <Property name="Size" value="{{0.08,0},{0.05,0}}" />
+			<Property name="Text" value="" />
+		</Window>
+    	<Window type="GlossySerpentFHD/Button" name="LevelLabel">
+            <Property name="Position" value="{{0.17, 0},{0.0,0}}" />
+            <Property name="Size" value="{{0.08,0},{0.05,0}}" />
+			<Property name="Text" value="Level" />
+		</Window> 
+    	<Window type="GlossySerpentFHD/Button" name="LevelValue">
+            <Property name="Position" value="{{0.25, 0},{0.0,0}}" />
+            <Property name="Size" value="{{0.08,0},{0.05,0}}" />
+			<Property name="Text" value="1" />
+		</Window>		 
+      
+      	<Window type="GlossySerpentFHD/Button" name="TimeLabel">
+            <Property name="Position" value="{{0.34, 0},{0.0,0}}" />
+            <Property name="Size" value="{{0.08,0},{0.05,0}}" />
+			<Property name="Text" value="Time" />
+		</Window> 
+    	<Window type="GlossySerpentFHD/Button" name="TimeValue">
+            <Property name="Position" value="{{0.42, 0},{0.0,0}}" />
+            <Property name="Size" value="{{0.1,0},{0.05,0}}" />
+			<Property name="Text" value="0" />
+		</Window> 
+      
+      	<Window type="GlossySerpentFHD/Button" name="ScoreLabel">
+            <Property name="Position" value="{{0.53, 0},{0.0,0}}" />
+            <Property name="Size" value="{{0.06,0},{0.05,0}}" />
+			<Property name="Text" value="Score" />
+		</Window> 
+    	<Window type="GlossySerpentFHD/Button" name="ScoreValue">
+            <Property name="Position" value="{{0.59, 0},{0.0,0}}" />
+            <Property name="Size" value="{{0.1,0},{0.05,0}}" />
+			<Property name="Text" value="1" />
+		</Window> 
+		
+		<Window type="GlossySerpentFHD/Button" name="FlagsLabel">
+            <Property name="Position" value="{{0.70, 0},{0.0,0}}" />
+            <Property name="Size" value="{{0.05,0},{0.05,0}}" />
+			<Property name="Text" value="Flags" />
+		</Window> 
+    	<Window type="GlossySerpentFHD/Button" name="FlagsValue">
+            <Property name="Position" value="{{0.75, 0},{0.0,0}}" />
+            <Property name="Size" value="{{0.08,0},{0.05,0}}" />
+			<Property name="Text" value="0/0" />
+		</Window>
+		
+		<Window type="GlossySerpentFHD/Button" name="HighScoreLabel">
+            <Property name="Position" value="{{0.84, 0},{0.0,0}}" />
+            <Property name="Size" value="{{0.08,0},{0.05,0}}" />
+			<Property name="Text" value="Best Score" />
+		</Window> 
+    	<Window type="GlossySerpentFHD/Button" name="HighScoreValue">
+            <Property name="Position" value="{{0.92, 0},{0.0,0}}" />
+            <Property name="Size" value="{{0.08,0},{0.05,0}}" />
+			<Property name="Text" value="0" />
+		</Window> 		
+		
+    
+    
+		<Window type="GlossySerpentFHD/Button32_4C" name="QuitButton">
+            <Property name="Position" value="{{0.90, 0},{0.95,0}}" />
+            <Property name="Size" value="{{0.10,0},{0.05,0}}" />
+			<Property name="Text" value="Quit (Esc)" />
+			
+		</Window> 
+		<Window type="GlossySerpentFHD/Button32_4C" name="RestartButton">
+            <Property name="Position" value="{{0.80, 0},{0.95,0}}" />
+            <Property name="Size" value="{{0.10,0},{0.05,0}}" />
+			<Property name="Text" value="Restart" />
+			<Property name="Visible" value="false" />
+			
+		</Window> 
+		<Window type="GlossySerpentFHD/Button32_4C" name="ResumeButton">
+            <Property name="Position" value="{{0.60, 0},{0.95,0}}" />
+            <Property name="Size" value="{{0.10,0},{0.05,0}}" />
+			<Property name="Text" value="Resume" />
+			<Property name="Visible" value="false" />
+		</Window> 
+		<Window type="GlossySerpentFHD/Button32_4C" name="HighScoresButton">
+            <Property name="Position" value="{{0.70, 0},{0.95,0}}" />
+            <Property name="Size" value="{{0.10,0},{0.05,0}}" />
+			<Property name="Text" value="HighScores" />
+			<Property name="Visible" value="false" />
+		</Window> 
+		<Window type="GlossySerpentFHD/Button" name="MessageLabel">
+            <Property name="Position" value="{{0.0, 0},{0.95,0}}" />
+            <Property name="Size" value="{{0.60,0},{0.05,0}}" />
+			<Property name="Text" value="Enter your name." />
+		</Window> 
+
+    </Window>
+</GUILayout>

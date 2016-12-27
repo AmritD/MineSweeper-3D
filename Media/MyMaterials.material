@@ -1,0 +1,46 @@
+//This is from http://www.ogre3d.org/tikiwiki/Materials
+
+material Picture/Cell
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture cell.png
+
+			}
+		}
+	}
+}
+
+material Picture/Golden
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture Golden.jpg
+
+			}
+		}
+	}
+}
+
+material Picture/Lighted
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture lighted.jpg
+
+			}
+		}
+	}
+}
